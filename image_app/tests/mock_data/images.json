@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "file_name": "image1.jpg",
+        "file_path": "/images/image1.jpg",
+        "resolution": "1920x1080",
+        "size": 204800 
+    },
+    {
+        "id": 2,
+        "file_name": "image2.png",
+        "file_path": "/images/image2.png",
+        "resolution": "1280x720",
+        "size": 102400
+    },
+    {
+        "id": 3,
+        "file_name": "image3.gif",
+        "file_path": "/images/image3.gif",
+        "resolution": "640x480",
+        "size": 51200
+    }
+]
