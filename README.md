@@ -42,7 +42,6 @@ pydantic = {extras = ["email"], version = "^2.9.2"}
 1. Внутри директории **image__app** воспользоваться командой `make certs`
 2. Должна появиться директория **certs** и в ней **public.pem** и **private.pem**
 3. Создать **.env** файл на основе **.env-example**
-4. Нужно прогнать миграции командой `make migrate`
 
 Следующим шагом подготовка приложения **image_process_app**
 
@@ -53,6 +52,7 @@ pydantic = {extras = ["email"], version = "^2.9.2"}
 ```bash
 docker compose --env-file ./image_app/.env up --build -d
 ```
+Нужно прогнать миграции командой `make migrate`
 
 [Swagger](http://127.0.0.1:8000/)
 

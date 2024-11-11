@@ -27,8 +27,8 @@ migrate:
 test:
 	${DC} exec api sh -c "pytest"
 
-.PHONY
+.PHONY:
 certs:
-	mkdir -p certs
-	openssl genrsa -out certs/private.pem 2048
-	openssl rsa -in certs/private.pem -outform PEM -pubout -out certs/public.pem
+	mkdir -p ./app/certs; \
+	openssl genrsa -out ./app/certs/private.pem 2048; \
+	openssl rsa -in ./app/certs/private.pem -outform PEM -pubout -out ./app/certs/public.pem;
